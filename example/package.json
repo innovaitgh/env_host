@@ -1,0 +1,18 @@
+{
+    "name": "env_host_example",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "babel index.js --out-dir dist"
+    },
+    "dependencies": {
+        "env_host": "link:.."
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5"
+      }
+  }
+  
