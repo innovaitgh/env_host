@@ -38,7 +38,11 @@ describe('envHost', () => {
       expect(url).toBe("https://example.com/api/v1");
     })
 
+  })
 
+  it("should return localhost when host includes localhost", () => {
+    const url = getUrl("localhost:3000", "/api/v1");
+    expect(url).toBe("http://localhost:3000/api/v1");
   })
 
 
